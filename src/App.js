@@ -3,7 +3,6 @@ import Main from "./components/Main";
 import Forecast from "./components/Forecast";
 import { filterForecast } from "./functions";
 import {cities} from "./functions";
-
 import "./App.css";
 
 const App = () => {
@@ -11,6 +10,7 @@ const App = () => {
   const [city, setCity] = useState("London");
   const [forecast, setForecast] = useState(null);
 
+  //const API_key = process.env.REACT_APP_MY_API_ID;
   const API_key = "008bd9effa179ed813da02c0c8b5ec76";
 
   const fetchWeather = (city) => {
